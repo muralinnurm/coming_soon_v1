@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.602),rgba(0, 0, 0, 0.685)), url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container .fa-crown{
+    color: #00ffff;
+    font-size: 3rem;
+}
+h1.min-heading{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #00ffff;
+}
+p.min-pera{
+    font-size: 1.2rem;
+    margin: 1.3rem 0;
+}
+div.timer{
+    display: flex;
+    margin-left: 3rem;
+}
+div.timer div{
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+div.timer div span:first-child{
+    font-size: 3rem;
+    font-weight: 500;
+}
+div.timer div span:last-child{
+    font-size: .7rem;
+    font-weight: 300;
+    color: #00ffff;
+}
+.input-wrapper{
+    margin-top: 3rem;
+}
+.input-wrapper input{
+    width: 15rem;
+    padding: 9px 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    transition: all .3s ease;
+}
+.input-wrapper input::placeholder{
+    color: #eeeeee;
+    font-size: .8rem;
+}
+.input-wrapper input:hover{
+    border-color: #00ffff;
+}
+.input-wrapper input:focus{
+    outline: none;
+    border-color: #00ffff;
+}
+.input-wrapper button{
+    padding: 11px 12px;
+    font-size: .7rem;
+    background-color: transparent;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.input-wrapper button:hover{
+    background-color: #00ffff;
+    color: #fff;
+}
+@media only screen and (max-width: 425px){
+	.container .fa-crown{
+        font-size: 2rem;
+    }
+    h1.min-heading{
+        font-size: 2rem;
+    }
+    p.min-pera{
+        font-size: .8rem;
+    }
+    div.timer{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-row-gap: 2rem;
+    }
+    .input-wrapper button{
+        margin-top: 1rem;
+        width: 100;
+    }
+
+}
