@@ -1,7 +1,7 @@
 //set the date
 
 
-let countDownDate = new Date('aug 30, 2022 14:00:00');
+let countDownDate = new Date('jul 30, 2023 14:00:00');
 
 let x = setInterval(function(){
     //today date
